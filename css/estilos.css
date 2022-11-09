@@ -110,6 +110,7 @@ body{
     color: var(--Dark-grayish-blue);
     height: 112px;
     padding-top: 42px;
+    text-transform: uppercase;
 }
 
 .navbar .navbar__items .navbar__link:hover{
@@ -159,6 +160,7 @@ body{
     color: var(--Very-vark-blue);
     font-weight: 700;
     font-size: 1.1em;
+    text-transform: uppercase;
 }
 
 .modal-navbar__background .modal-navbar .modal-navbar__close-icon:hover{
@@ -170,9 +172,11 @@ body{
  .gallery .gallery__image-conteiner{
     height: 300px;
     width: 100%;
-    background-image: url("../img/image-product-1.jpg");
-    background-position-y: -35px;
-    background-size: cover;
+    background-image: url("../img/psp\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: 150%;
+   background-position: 50% 50%;
+   
 }
 
 .gallery .gallery__image-conteiner .gallery__previus{
@@ -229,6 +233,7 @@ body{
     color: var(--Dark-grayish-blue);
     line-height: 24px;
     margin-bottom: 24px;
+   white-space: pre-line;
 }
 
 .details .details__prices{
@@ -415,7 +420,7 @@ margin-left: 50%;
 .modal-gallery__background .modal-gallery__image-conteiner{
     width: 446px;
 height: 446px;
-    background: url('../img/image-product-1.jpg');
+    background: url('../img/psp\ \(1\).jpg');
     background-size: cover;
     border-radius: 16px;
     margin-bottom: 32px;

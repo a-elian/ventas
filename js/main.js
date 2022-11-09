@@ -54,12 +54,14 @@ addToCartBtn.addEventListener('click',()=>{
 const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
 const ProductContainer = document.querySelector('.cart-modal__chekout-container');
+const details__now = document.querySelector('.details__now').textContent;
+let valor_details= parseInt(details__now.slice(2))
 
-
+console.log(valor_details);
 cartIconBtn.addEventListener('click',()=>{
     
     cartModal.classList.toggle('show');
-    priceModal.innerHTML=`$125 x ${cartNotification.innerText=userInputNumber}=<span>${cartNotification.innerText=userInputNumber*125}.00</span>`;
+    priceModal.innerHTML=`Q ${valor_details} x ${cartNotification.innerText=userInputNumber}=<span>${cartNotification.innerText=userInputNumber*valor_details}.00</span>`;
     cartNotification.innerText=userInputNumber;
     
     if(userInputNumber==0){
@@ -164,7 +166,8 @@ let thumbnails = document.querySelectorAll('.gallery__thumnail');
 [...thumbnails].forEach(thumbnail=>{
     thumbnail.addEventListener('click',e=>{
         
-    imageContainer.style.backgroundImage=`url("./img/image-product-${e.target.id}.jpg")`;
+    imageContainer.style.backgroundImage=`url("./img/psp (${e.target.id}).jpg")`;
+    
     imageContainer.style.backgroundPositioY='-35px';
     imageContainer.style.backgroundSize='cover';
    
@@ -182,7 +185,7 @@ const modalImageContainer = document.querySelector('.modal-gallery__image-contei
 [...modathumbnails].forEach(modathumbnail=>{
     modathumbnail.addEventListener('click',e=>{
        
-        modalImageContainer.style.background=`url("./img/image-product-${e.target.id.slice(-1)}.jpg")`;
+        modalImageContainer.style.background=`url("./img/psp (${e.target.id.slice(-1)}).jpg")`;
         modalImageContainer.style.backgroundPositioY='-35px';
         modalImageContainer.style.backgroundSize='cover';
  
@@ -198,12 +201,13 @@ function changeNextImage(imgContainer){
     }else{
         imgIndex++;
     }
-    imgContainer.style.background=`url("./img/image-product-${imgIndex}.jpg")`;
+    imgContainer.style.background=`url("./img/psp (${imgIndex}).jpg")`;
     imgContainer.style.backgroundPositioY='-35px';
     imgContainer.style.backgroundSize='cover';
     
     
 }
+
 
 function changePreviusImage(imgContainer){
     if (imgIndex==1) {
@@ -212,7 +216,7 @@ function changePreviusImage(imgContainer){
         imgIndex--;
     }
     
-    imgContainer.style.background=`url("./img/image-product-${imgIndex}.jpg")`;
+    imgContainer.style.background=`url("./img/psp (${imgIndex}).jpg")`;
     imgContainer.style.backgroundPositioY='-35px';
     imgContainer.style.backgroundSize='cover';
     
