@@ -174,7 +174,7 @@ body{
     width: 100%;
     background-image: url("../img/psp\ \(1\).jpg");
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: cover;
    background-position: 50% 50%;
    
 }
@@ -250,8 +250,10 @@ body{
     gap: 15px;
 }
 
-.details .details__prices .details__discount{
-    font-size: 0.5em;
+.details .details__discount{
+    height: 20px;
+    font-size: 1em;
+    text-align: center;
     background-color: var(--Pale-orange);
     color: var(--Orange);
     
@@ -355,7 +357,7 @@ body{
     padding: 24px;
 }
 .cart-modal .cart-modal__details-container .cart-modal__img{
-    width: 50px;
+    width: 90px;
     border-radius: 4px;
 }
 
@@ -429,6 +431,7 @@ height: 446px;
 
 .modal-gallery__background .modal-gallery__thumnail .modal-gallery__thumnails{
     width: 90px;
+    height: 70px;
     border-radius: 16px;
 }
 .modal-gallery__background .modal-gallery__thumnail .modal-gallery__thumnails:hover{
@@ -461,6 +464,71 @@ height: 446px;
 .modal-gallery__background .modal-gallery .modal-gallery__next,.modal-gallery__previus:hover{
 cursor: pointer;
 }
+
+
+/*FOOTER*/
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+  }
 /*MEDIA PANTALLA*/
 @media (min-width:1024px){
     .main-container{
@@ -516,7 +584,7 @@ cursor: pointer;
         width: 446px;
         height: 446px;
         margin-bottom: 32px;
-        background-position-y: 0;
+        background-size: cover;
     }
     .gallery .gallery__image-conteiner:hover{
       cursor: pointer;

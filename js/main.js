@@ -55,15 +55,18 @@ const cartIconBtn = document.querySelector('.header__cart');
 const cartModal = document.querySelector('.cart-modal');
 const ProductContainer = document.querySelector('.cart-modal__chekout-container');
 const details__now = document.querySelector('.details__now').textContent;
+const details__title = document.querySelector('.details__title').textContent;
+const cart_modal__product = document.querySelector('.cart-modal__product');
 let valor_details= parseInt(details__now.slice(2))
 
-console.log(valor_details);
+
+
 cartIconBtn.addEventListener('click',()=>{
     
     cartModal.classList.toggle('show');
-    priceModal.innerHTML=`Q ${valor_details} x ${cartNotification.innerText=userInputNumber}=<span>${cartNotification.innerText=userInputNumber*valor_details}.00</span>`;
+    priceModal.innerHTML=`Q ${valor_details} x ${cartNotification.innerText=userInputNumber}=<span>Q ${cartNotification.innerText=userInputNumber*valor_details}.00</span>`;
     cartNotification.innerText=userInputNumber;
-    
+    cart_modal__product.innerText=details__title
     if(userInputNumber==0){
         parrafo.innerHTML="Producto vacio";
         parrafo.classList.add('texto-vacio');
